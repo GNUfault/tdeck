@@ -21,6 +21,9 @@
 #ifndef TDECK_H
 #define TDECK_H
 
-void tdeck.init(void);
+class TDeck {
+public:
+  void init(void);
+};
 
 #endif // TDECK_H
