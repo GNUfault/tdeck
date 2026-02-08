@@ -29,6 +29,7 @@
 #define BOARD_SPI_MISO  38
 #define BOARD_SPI_SCK   40
 #define BOARD_SPI_MOSI  41
+#define BOARD_BL_PIN    42
 
 void TDeck::init(void) {
   pinMode(BOARD_POWERON, OUTPUT);
@@ -44,4 +45,7 @@ void TDeck::init(void) {
 
   pinMode(BOARD_SPI_MISO, INPUT_PULLUP);
   SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
+
+  pinMode(BOARD_BL_PIN, OUTPUT);
+  digitalWrite(BOARD_BL_PIN, HIGH);
 }
