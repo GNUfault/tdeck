@@ -26,4 +26,6 @@ public:
   void init(void);
 };
 
+extern TDeck tdeck;
+
 #endif // TDECK_H
