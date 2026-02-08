@@ -1,6 +1,6 @@
 #ifndef TDECK_H
 #define TDECK_H
 
-void tdeck(void);
+void tdeck.init(void);
 
 #endif // TDECK_H
